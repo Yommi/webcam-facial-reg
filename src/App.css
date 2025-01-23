@@ -136,7 +136,7 @@ h1 {
   .webcam-result-cont {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
   }
 
   .webcam-container {
