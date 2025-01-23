@@ -123,7 +123,7 @@ function App() {
         </div>
       </div>
 
-      <div style={{ display: 'flex', justifyContent: 'center' }}>
+      <div className="webcam-result-cont">
         {/* Webcam Feed */}
         <div className="webcam-container">
           {isCameraActive && (

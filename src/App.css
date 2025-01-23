@@ -29,6 +29,11 @@ h1 {
   background-color: #0056b3;
 }
 
+.webcam-result-cont {
+  display: flex;
+  justify-content: center;
+}
+
 .webcam-container {
   margin-top: 30px;
   display: flex;
@@ -128,12 +133,10 @@ h1 {
     font-size: 14px;
   }
 
-  .detection {
-    margin: 10px 1px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    background-color: #f9f9f9;
+  .webcam-result-cont {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 
   .webcam-container {
