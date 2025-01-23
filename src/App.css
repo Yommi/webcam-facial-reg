@@ -1,38 +1,139 @@
-.App {
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: #f4f4f4;
+}
+
+h1 {
+  color: #333;
+}
+
+.buttons {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.btn {
+  padding: 1% 2%;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+.webcam-container {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.detections {
+  margin-top: 20px;
+  text-align: left;
+}
+
+.detection {
+  margin: 10px 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.detection-info p {
+  margin: 5px 0;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  width: 300px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.modal button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #007bff;
   color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+.modal button:hover {
+  background-color: #0056b3;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media (max-width: 768px) {
+  .buttons {
+    flex-direction: column;
+    align-items: center;
   }
-  to {
-    transform: rotate(360deg);
+
+  .btn {
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  input[type='file'] {
+    width: 100%;
+  }
+
+  .webcam-container {
+    width: 100%;
+    height: 250px;
+  }
+
+  .detections {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .detection-info {
+    width: 100%;
+    margin: 0;
+  }
+
+  .modal-content {
+    width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  .btn {
+    padding: 15px;
+    font-size: 14px;
+  }
+
+  .webcam-container {
+    height: 200px;
+  }
+
+  .modal-content {
+    width: 100%;
+    padding: 15px;
   }
 }
