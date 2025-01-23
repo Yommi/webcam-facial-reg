@@ -128,6 +128,14 @@ h1 {
     font-size: 14px;
   }
 
+  .detection {
+    margin: 10px 1px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+  }
+
   .webcam-container {
     height: 200px;
   }
