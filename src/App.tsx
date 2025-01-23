@@ -108,6 +108,7 @@ function App() {
         <button className="btn" onClick={handleDetectFaces}>
           Detect Faces From Feed
         </button>
+
         <button className="btn" onClick={toggleCamera}>
           {isCameraActive ? 'Stop Webcam' : 'Start Webcam'}
         </button>
@@ -115,6 +116,7 @@ function App() {
           <button className="btn" onClick={handleUpload}>
             Upload Image and Detect Faces
           </button>
+
           <input
             style={{ padding: '20px 0', marginLeft: '20px' }}
             type="file"
